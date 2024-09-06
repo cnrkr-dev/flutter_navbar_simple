@@ -23,7 +23,7 @@ class _MainApptate extends State<MainApp> {
         ),
         bottomNavigationBar: NavigationBar(
           destinations: const [
-            NavigationDestination(icon: Icon(Icons.home), label: "tab 1"),
+            NavigationDestination(icon: Icon(Icons.home), label: "page 1"),
             NavigationDestination(icon: Icon(Icons.person), label: "tab 2"),
             NavigationDestination(icon: Icon(Icons.settings), label: "tab 3")
           ],
