@@ -13,6 +13,8 @@ class MainApp extends StatefulWidget {
 
 class _MainApptate extends State<MainApp> {
   int currentPageIndex = 0;
+  NavigationDestinationLabelBehavior labelBehavior =
+      NavigationDestinationLabelBehavior.alwaysShow;
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +24,8 @@ class _MainApptate extends State<MainApp> {
           title: const Text('NavigationBar Sample'),
         ),
         bottomNavigationBar: NavigationBar(
+          labelBehavior: labelBehavior,
+          selectedIndex: currentPageIndex,
           destinations: const [
             NavigationDestination(icon: Icon(Icons.home), label: "page 1"),
             NavigationDestination(icon: Icon(Icons.person), label: "page 2"),
