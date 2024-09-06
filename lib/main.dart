@@ -25,7 +25,7 @@ class _MainApptate extends State<MainApp> {
           destinations: const [
             NavigationDestination(icon: Icon(Icons.home), label: "page 1"),
             NavigationDestination(icon: Icon(Icons.person), label: "page 2"),
-            NavigationDestination(icon: Icon(Icons.settings), label: "tab 3")
+            NavigationDestination(icon: Icon(Icons.settings), label: "page 3")
           ],
           onDestinationSelected: (value) {
             setState(() {
